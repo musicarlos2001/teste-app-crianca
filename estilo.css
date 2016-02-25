@@ -1,0 +1,122 @@
+
+body {
+	background: #3D1A11;
+	margin: 0;
+	font-size: sans-serif;
+	text-align: center;
+}
+
+input[type=radio]{
+	display: none;
+}
+
+label{
+	background-color: #563429;
+	color: white;
+	display: block;
+	font-size: 75%;
+	padding: 1em 0 1em;
+	text-transform: uppercase;
+}
+
+input[type=radio]:checked + label{
+	background-color: #E4876D;
+}
+
+
+
+.menu {
+	width: 100%;
+}
+
+/* selecionar a opção biel */
+#opcao-biel:checked ~ #pietro{
+	display: none;
+}
+
+#opcao-biel:checked ~ #mel{
+	display: none;
+}
+
+#opcao-biel:checked ~ #joao{
+	display: none;
+}
+
+#opcao-biel:checked ~ #ana{
+	display: none;
+}
+
+/* selecionar a opção pietro */
+
+#opcao-pietro:checked ~ #biel{
+	display: none;
+}
+
+#opcao-pietro:checked ~ #mel{
+	display: none;
+}
+
+#opcao-pietro:checked ~ #joao{
+	display: none;
+}
+
+#opcao-pietro:checked ~ #ana{
+	display: none;
+}
+
+
+/* selecionar a opção mel */
+
+#opcao-mel:checked ~ #biel{
+	display: none;
+}
+
+#opcao-mel:checked ~ #pietro{
+	display: none;
+}
+
+#opcao-mel:checked ~ #joao{
+	display: none;
+}
+
+#opcao-mel:checked ~ #ana{
+	display: none;
+}
+
+
+/* selecionar a opção joao */
+
+#opcao-joao:checked ~ #biel{
+	display: none;
+}
+
+#opcao-joao:checked ~ #pietro{
+	display: none;
+}
+
+#opcao-joao:checked ~ #mel{
+	display: none;
+}
+
+#opcao-joao:checked ~ #ana{
+	display: none;
+}
+
+
+/* selecionar a opção ana */
+
+#opcao-ana:checked ~ #biel{
+	display: none;
+}
+
+#opcao-ana:checked ~ #pietro{
+	display: none;
+}
+
+#opcao-ana:checked ~ #joao{
+	display: none;
+}
+
+#opcao-ana:checked ~ #mel{
+	display: none;
+}
