@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crianças da Família</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+	<audio id="audio-familia">
+   	 	<source src="familia.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="audio-ana">
+   	 	<source src="ana-julia.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="audio-joao">
+   	 			<source src="joao-vitor.mp3" type="audio/mpeg">
+	</audio>
+	
+	<audio id="audio-biel">
+   	 	<source src="luis-gabriel.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="audio-pietro">
+   	 	<source src="pietro.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="audio-mel">
+   	 	<source src="melissa.mp3" type="audio/mpeg">
+	</audio>
+ 
+	
+	
+
+	<input type="radio" name="opcao" id="opcao-biel" checked>
+	<label for="opcao-biel" onclick="play_biel()">Luis Gabriel</label>
+	
+
+	<input type="radio" name="opcao" id="opcao-pietro">
+	<label for="opcao-pietro" onclick="play_pietro()">Pietro</label>
+
+	<input type="radio" name="opcao" id="opcao-mel">
+	<label for="opcao-mel" onclick="play_mel()">Melissa</label>
+
+	<input type="radio" name="opcao" id="opcao-joao">
+	<label for="opcao-joao" onclick="play_joao()">João Victor</label>
+
+	<input type="radio" name="opcao" id="opcao-ana">
+	<label for="opcao-ana" onclick="play_ana()">Ana Giulia</label>
+
+<!-- 
+	<input type="radio" name="opcao" id="familia" checked>
+	<label for="familia" onclick="play_familia()">A Grande Família</label>
+
+	<img src="imagens/familia.jpg" alt="Familia" id="familia" class="menu">
+-->
+	
+
+
+	<img src="biel.jpg" alt="Gabriel" id="biel" class="menu">
+	
+	<img src="pietro.jpg" alt="Pietro" id="pietro" class="menu">
+
+	<img src="mel.jpg" alt="Mel" id="mel" class="menu">
+
+	<img src="joao.jpg" alt="Joao" id="joao" class="menu">
+
+	<img src="ana2.jpg" alt="Ana" id="ana" class="menu">
+	
+
+
+	<script>
+    ana = document.getElementById('audio-ana');
+    joao = document.getElementById('audio-joao');
+    mel = document.getElementById('audio-mel');
+    pietro = document.getElementById('audio-pietro');
+    biel = document.getElementById('audio-biel');
+    familia = document.getElementById('audio-familia');
+ 
+    	function play_familia(){
+        	familia.play();
+    	} 
+
+
+    	function play_ana(){
+        	ana.play();
+    	} 
+
+
+    	function play_joao(){        	
+			joao.play();
+    	} 
+
+    	function play_mel(){        
+			mel.play();
+    	} 
+
+    	function play_biel(){        	
+			biel.play();
+    	} 
+
+    	function play_pietro(){        
+			pietro.play();
+    	} 
+    	
+      
+	</script>
+
+</body>
+</html>
